@@ -1,13 +1,26 @@
 const express = require('express');
+const morgan = require('morgan');
 
 const app = express();
 
 // Initialize view engine
 app.set('view engine', 'ejs');
 // app.set('views', 'templates'); // Change views dir
-app.use(express.static('public'));
 
 app.listen(3000);
+
+// Static files
+app.use(express.static('public/styles'));
+
+// Middleware
+app.use(( request, response, next ) => {
+    console.log('A request was made:');
+    console.log(request.method, ' - Host:', request.hostname, ' - Path:', request.path)
+
+    next();
+});
+
+app.use(morgan('dev'));
 
 app.get('/', ( request, response ) => {
 //    response.send('<h1>Home Page</h1>');

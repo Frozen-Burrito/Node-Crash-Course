@@ -13,3 +13,6 @@ I've learned:
 * How to create a simple server
 * Handle requests and responses
 * Basic routing and redirects
+* Install and use npm packages
+* Express apps
+* View engines (ejs)
