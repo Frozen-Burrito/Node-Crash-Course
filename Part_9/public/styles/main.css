@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(252, 252, 252);
+    font-family: 'Biryani', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2 {
+    display: inline-block;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 4px solid rgb(53, 51, 167);
+}
+
+a {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid rgb(53, 51, 167);
+}
+
+div.blog-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 1rem;
+}
+
+.post {
+    padding: 3rem;
+    margin: 1rem 0;
+
+    border: 1px solid rgb(221, 221, 221);
+
+    /* -webkit-box-shadow: 0px 5px 24px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 24px -14px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 24px -14px rgba(0,0,0,0.75); */
+}
+
+form.container {
+    max-width: 40%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    margin: 1rem 0;
+    padding: .4rem 1rem;
+
+    border: 1px solid rgb(221, 221, 221);
+}
+
+textarea {
+    height: 10rem;
+}
+
+button {
+
+    margin-top: 1rem;
+    padding: .6rem 1.6rem;
+
+    background-color: rgb(53, 51, 167);
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 1.4rem;
+
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: rgb(83, 83, 83);
+    color: rgb(252, 252, 252);
+}
